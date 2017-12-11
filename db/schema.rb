@@ -16,9 +16,9 @@ ActiveRecord::Schema.define(version: 20171211232212) do
   enable_extension "plpgsql"
 
   create_table "menu_items", force: :cascade do |t|
-    t.string "name"
-    t.string "price"
-    t.string "description"
+    t.string "name", null: false
+    t.string "price", null: false
+    t.string "description", null: false
     t.bigint "restaurant_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
