@@ -48,6 +48,7 @@ export default class MenuItem extends React.Component {
             </List>
             <Button as={Link} to={`/menu_items/${id}/edit`} color='violet'>Edit</Button>
             <Button onClick={() => this.deleteMenuItem(id)} negative>Delete</Button>
+            <Button as={Link} to='/menu'>Back</Button>
           </Grid.Column>
         </Grid.Row>
       </Grid>

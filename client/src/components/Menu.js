@@ -9,6 +9,7 @@ import {
 } from 'semantic-ui-react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import MenuForm from './MenuForm'
 
 const styles = {
   dimmer: {
@@ -60,6 +61,7 @@ export default class Menu extends React.Component {
   render() {
     return(
       <Segment basic>
+        <MenuForm/>
         <Table basic='very' celled collapsing>
           <Table.Header>
             <Table.Row>

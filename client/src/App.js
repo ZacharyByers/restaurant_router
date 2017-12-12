@@ -9,6 +9,7 @@ import Navbar from './components/Navbar'
 import Login from './components/Login'
 import Menu from './components/Menu'
 import MenuItem from './components/MenuItem'
+import MenuForm from './components/MenuForm'
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
           <Route exact path='/login' component={Login} />
           <ProtectedRoute exact path='/menu' component={Menu} />
           <ProtectedRoute exact path='/menu_items/:id' component={MenuItem} />
+          <ProtectedRoute exact path='/menu_items/:id/edit' component={MenuForm} />
           <Route component={NoMatch} />
         </Switch>
       </Segment>
