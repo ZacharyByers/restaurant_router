@@ -5,9 +5,11 @@ Restaurant.create(
 )
 
 20.times do
+  name = Faker::Food.dish
   Restaurant.last.menu_items.create(
-    name: Faker::Food.dish,
+    name: name,
     price: Faker::Commerce.price,
-    description: Faker::Lorem.sentence
+    description: Faker::Lorem.sentence,
+    photo: "https://robohash.org/#{name}?set=set4"
   )
 end

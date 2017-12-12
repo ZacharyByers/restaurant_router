@@ -4,6 +4,7 @@ class CreateMenuItems < ActiveRecord::Migration[5.1]
       t.string :name, null: false
       t.string :price, null: false
       t.string :description, null: false
+      t.string :photo
       t.belongs_to :restaurant, foreign_key: true
 
       t.timestamps
